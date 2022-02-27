@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { makeStyles } from '@mui/styles';
+
+const useStyles = makeStyles((theme) => ({
+  temporary: {
+    backgroundColor: '#F7D8BA',
+    height: '100vh',
+  },
+}));
 
 const Upload = () => {
-  return (
-    <div>Upload</div>
-  )
-}
+  const classes = useStyles();
 
-export default Upload
+  return <div className={classes.temporary}>Upload</div>;
+};
+
+export default Upload;

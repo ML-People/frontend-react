@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { makeStyles } from '@mui/styles';
+
+const useStyles = makeStyles((theme) => ({
+  temporary: {
+    backgroundColor: '#E1F8DD',
+    height: '100vh',
+  },
+}));
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+  const classes = useStyles();
+  return <div className={classes.temporary}>Home</div>;
+};
 
-export default Home
+export default Home;
