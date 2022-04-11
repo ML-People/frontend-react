@@ -1,14 +1,13 @@
 import React from 'react'
 import './App.css';
-import Home from './components/pages/Home'
-import Upload from './components/pages/Upload'
-import About from './components/pages/About'
 import Navbar from './components/Navbar';
+import Getputbuttons from './components/Getputbuttons';
 
 function App() {
   return (
     <div className='App'>
-      <Navbar />
+      <Getputbuttons />
+      <Navbar /> 
     </div>
   );
 }
