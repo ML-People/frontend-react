@@ -16,6 +16,7 @@ const Navbar = () => {
   return (
     <>
       <AppBar position='sticky'>
+        <h2>AI Image Enhancement</h2>
         <Tabs value={selectedTab} onChange={handleChange}>
           <Tab label="Home" />
           <Tab label="Upload" />
